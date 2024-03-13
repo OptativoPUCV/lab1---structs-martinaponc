@@ -373,3 +373,40 @@ Wed 13 Mar 2024 09:04:32 PM UTC:
  tests:  0|5
 total_score: 20/70
 50d10cf
+Wed 13 Mar 2024 09:18:05 PM UTC: 
+ exercises.c | 14 +++++++++++++-
+ 1 file changed, 13 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:62:7: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+   62 |       if (arr[i] % 2 == 0);
+      |       ^~
+exercises.c:63:7: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   63 |       {
+      |       ^
+exercises.c:64:9: error: ‘newarr’ undeclared (first use in this function); did you mean ‘newArr’?
+   64 |         newarr [count]      }
+      |         ^~~~~~
+      |         newArr
+exercises.c:64:9: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:64:23: error: expected ‘;’ before ‘}’ token
+   64 |         newarr [count]      }
+      |                       ^     ~
+      |                       ;
+exercises.c:59:7: error: variable ‘count’ set but not used [-Werror=unused-but-set-variable]
+   59 |   int count = 0 ;
+      |       ^~~~~
+exercises.c:58:8: error: unused variable ‘newArr’ [-Werror=unused-variable]
+   58 |   int *newArr = (int *)malloc(size *sizeof(int));
+      |        ^~~~~~
+exercises.c: At top level:
+exercises.c:68:3: error: expected identifier or ‘(’ before ‘{’ token
+   68 | } { return NULL; }
+      |   ^
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:68:1: error: control reaches end of non-void function [-Werror=return-type]
+   68 | } { return NULL; }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+78dde6f
