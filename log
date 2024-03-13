@@ -138,3 +138,14 @@ Wed 13 Mar 2024 09:02:13 PM UTC:
  tests:  0|5
 total_score: 20/70
 6146b96
+Wed 13 Mar 2024 09:02:32 PM UTC: 
+ exercises.c | 15 ---------------
+ 1 file changed, 15 deletions(-)
+test.c: In function ‘test_reverseArray’:
+test.c:125:5: error: implicit declaration of function ‘reverseArray’; did you mean ‘test_reverseArray’? [-Werror=implicit-function-declaration]
+  125 |     reverseArray(arr, size);
+      |     ^~~~~~~~~~~~
+      |     test_reverseArray
+cc1: all warnings being treated as errors
+Compilation failed
+4303e1d
