@@ -21,14 +21,7 @@ int findMax(int arr[], int size)
   }
   return max;  
 }	 
-int main()
-{
-  int arr[] = {5,6,8,10,17,2};
-  int size = sizeof(arr)/sizeof(arr[0]);
-  int maxval = findMax(arr,size);
-  printf("El valor maximo es: %d\n",maxval);
-  return 0;
-}
+
 
 /*
 Ejercicio 2: Invertir un Arreglo
@@ -52,7 +45,8 @@ void reverseArray(int arr[], int size)
     }
 }
 
-int main() {
+int main() 
+{
     int arr[] = {1, 2, 3, 4, 5};
     int size = sizeof(arr) / sizeof(arr[0]);
 

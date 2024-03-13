@@ -120,3 +120,15 @@ exercises.c:24:5: note: previous definition of ‘main’ with type ‘int()’
       |     ^~~~
 Compilation failed
 315da08
+Wed 13 Mar 2024 09:02:05 PM UTC: 
+ exercises.c | 12 +++---------
+ 1 file changed, 3 insertions(+), 9 deletions(-)
+test.c:382:5: error: redefinition of ‘main’
+  382 | int main(int argc, char *argv[]) {
+      |     ^~~~
+In file included from test.c:1:
+exercises.c:48:5: note: previous definition of ‘main’ with type ‘int()’
+   48 | int main()
+      |     ^~~~
+Compilation failed
+3c6a867
