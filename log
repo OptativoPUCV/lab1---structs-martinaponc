@@ -358,3 +358,12 @@ Wed 13 Mar 2024 09:03:01 PM UTC:
  tests:  0|6
 total_score: 10/70
 3f6876f
+Wed 13 Mar 2024 09:04:22 PM UTC: 
+ exercises.c | 18 +++++++++++++++++-
+ 1 file changed, 17 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c:47:1: error: expected identifier or ‘(’ before ‘}’ token
+   47 | }
+      | ^
+Compilation failed
+280718a
