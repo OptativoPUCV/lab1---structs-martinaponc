@@ -21,7 +21,7 @@ int findMax(int arr[], int size)
   }
   return max;  
 }	 
-int main()
+  int main()
 {
   int arr[] = {5,6,8,10,17,2};
   int size = sizeof(arr)/sizeof(arr[0]);
