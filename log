@@ -149,3 +149,206 @@ test.c:125:5: error: implicit declaration of function ‘reverseArray’; did yo
 cc1: all warnings being treated as errors
 Compilation failed
 4303e1d
+Wed 13 Mar 2024 09:02:52 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:41:59: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+   41 | int *filterEvenNumbers(int arr[], int size, int *newSize) { return NULL; }
+      |                                                           ^
+exercises.c:50:38: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+   50 |                        int result[]) {}
+      |                                      ^
+exercises.c:58:38: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+   58 | int checkSorted(int arr[], int size) { return -2; }
+      |                                      ^
+exercises.c:71:3: error: storage class specified for parameter ‘Autor’
+   71 | } Autor;
+      |   ^~~~~
+exercises.c:75:3: error: expected specifier-qualifier-list before ‘Autor’
+   75 |   Autor autor;
+      |   ^~~~~
+exercises.c:77:3: error: storage class specified for parameter ‘Libro’
+   77 | } Libro;
+      |   ^~~~~
+exercises.c:79:23: error: expected declaration specifiers or ‘...’ before ‘Libro’
+   79 | void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor,
+      |                       ^~~~~
+exercises.c:96:3: error: storage class specified for parameter ‘Nodo’
+   96 | } Nodo;
+      |   ^~~~
+exercises.c:98:1: error: expected declaration specifiers before ‘Nodo’
+   98 | Nodo *crearListaEnlazada(int arr[], int size) { return NULL; }
+      | ^~~~
+In file included from test.c:5:
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/time.h:72:16: error: storage class specified for parameter ‘clock’
+   72 | extern clock_t clock (void) __THROW;
+      |                ^~~~~
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/time.h:76:15: error: storage class specified for parameter ‘time’
+   76 | extern time_t time (time_t *__timer) __THROW;
+      |               ^~~~
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/time.h:79:15: error: storage class specified for parameter ‘difftime’
+   79 | extern double difftime (time_t __time1, time_t __time0)
+      |               ^~~~~~~~
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/time.h:83:15: error: storage class specified for parameter ‘mktime’
+   83 | extern time_t mktime (struct tm *__tp) __THROW;
+      |               ^~~~~~
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/time.h:100:15: error: storage class specified for parameter ‘strftime’
+  100 | extern size_t strftime (char *__restrict __s, size_t __maxsize,
+      |               ^~~~~~~~
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/time.h:116:15: error: storage class specified for parameter ‘strftime_l’
+  116 | extern size_t strftime_l (char *__restrict __s, size_t __maxsize,
+      |               ^~~~~~~~~~
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/time.h:132:19: error: storage class specified for parameter ‘gmtime’
+  132 | extern struct tm *gmtime (const time_t *__timer) __THROW;
+      |                   ^~~~~~
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/time.h:136:19: error: storage class specified for parameter ‘localtime’
+  136 | extern struct tm *localtime (const time_t *__timer) __THROW;
+      |                   ^~~~~~~~~
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/time.h:154:19: error: storage class specified for parameter ‘gmtime_r’
+  154 | extern struct tm *gmtime_r (const time_t *__restrict __timer,
+      |                   ^~~~~~~~
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/time.h:159:19: error: storage class specified for parameter ‘localtime_r’
+  159 | extern struct tm *localtime_r (const time_t *__restrict __timer,
+      |                   ^~~~~~~~~~~
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/time.h:179:14: error: storage class specified for parameter ‘asctime’
+  179 | extern char *asctime (const struct tm *__tp) __THROW;
+      |              ^~~~~~~
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/time.h:183:14: error: storage class specified for parameter ‘ctime’
+  183 | extern char *ctime (const time_t *__timer) __THROW;
+      |              ^~~~~
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/time.h:197:14: error: storage class specified for parameter ‘asctime_r’
+  197 | extern char *asctime_r (const struct tm *__restrict __tp,
+      |              ^~~~~~~~~
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/time.h:202:14: error: storage class specified for parameter ‘ctime_r’
+  202 | extern char *ctime_r (const time_t *__restrict __timer,
+      |              ^~~~~~~
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/time.h:217:14: error: storage class specified for parameter ‘__tzname’
+  217 | extern char *__tzname[2];       /* Current timezone names.  */
+      |              ^~~~~~~~
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/time.h:218:12: error: storage class specified for parameter ‘__daylight’
+  218 | extern int __daylight;          /* If daylight-saving time is ever in use.  */
+      |            ^~~~~~~~~~
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/time.h:219:17: error: storage class specified for parameter ‘__timezone’
+  219 | extern long int __timezone;     /* Seconds west of UTC.  */
+      |                 ^~~~~~~~~~
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/time.h:224:14: error: storage class specified for parameter ‘tzname’
+  224 | extern char *tzname[2];
+      |              ^~~~~~
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/time.h:228:13: error: storage class specified for parameter ‘tzset’
+  228 | extern void tzset (void) __THROW;
+      |             ^~~~~
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/time.h:232:12: error: storage class specified for parameter ‘daylight’
+  232 | extern int daylight;
+      |            ^~~~~~~~
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/time.h:233:17: error: storage class specified for parameter ‘timezone’
+  233 | extern long int timezone;
+      |                 ^~~~~~~~
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/time.h:249:15: error: storage class specified for parameter ‘timegm’
+  249 | extern time_t timegm (struct tm *__tp) __THROW;
+      |               ^~~~~~
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/time.h:251:15: error: storage class specified for parameter ‘timelocal’
+  251 | extern time_t timelocal (struct tm *__tp) __THROW;
+      |               ^~~~~~~~~
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/time.h:262:12: error: storage class specified for parameter ‘dysize’
+  262 | extern int dysize (int __year) __THROW  __attribute__ ((__const__));
+      |            ^~~~~~
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/time.h:272:12: error: storage class specified for parameter ‘nanosleep’
+  272 | extern int nanosleep (const struct timespec *__requested_time,
+      |            ^~~~~~~~~
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/time.h:276:12: error: storage class specified for parameter ‘clock_getres’
+  276 | extern int clock_getres (clockid_t __clock_id, struct timespec *__res) __THROW;
+      |            ^~~~~~~~~~~~
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/time.h:279:12: error: storage class specified for parameter ‘clock_gettime’
+  279 | extern int clock_gettime (clockid_t __clock_id, struct timespec *__tp) __THROW;
+      |            ^~~~~~~~~~~~~
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/time.h:282:12: error: storage class specified for parameter ‘clock_settime’
+  282 | extern int clock_settime (clockid_t __clock_id, const struct timespec *__tp)
+      |            ^~~~~~~~~~~~~
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/time.h:311:12: error: storage class specified for parameter ‘clock_nanosleep’
+  311 | extern int clock_nanosleep (clockid_t __clock_id, int __flags,
+      |            ^~~~~~~~~~~~~~~
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/time.h:326:12: error: storage class specified for parameter ‘clock_getcpuclockid’
+  326 | extern int clock_getcpuclockid (pid_t __pid, clockid_t *__clock_id) __THROW;
+      |            ^~~~~~~~~~~~~~~~~~~
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/time.h:331:12: error: storage class specified for parameter ‘timer_create’
+  331 | extern int timer_create (clockid_t __clock_id,
+      |            ^~~~~~~~~~~~
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/time.h:336:12: error: storage class specified for parameter ‘timer_delete’
+  336 | extern int timer_delete (timer_t __timerid) __THROW;
+      |            ^~~~~~~~~~~~
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/time.h:340:12: error: storage class specified for parameter ‘timer_settime’
+  340 | extern int timer_settime (timer_t __timerid, int __flags,
+      |            ^~~~~~~~~~~~~
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/time.h:345:12: error: storage class specified for parameter ‘timer_gettime’
+  345 | extern int timer_gettime (timer_t __timerid, struct itimerspec *__value)
+      |            ^~~~~~~~~~~~~
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/time.h:364:12: error: storage class specified for parameter ‘timer_getoverrun’
+  364 | extern int timer_getoverrun (timer_t __timerid) __THROW;
+      |            ^~~~~~~~~~~~~~~~
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/time.h:371:12: error: storage class specified for parameter ‘timespec_get’
+  371 | extern int timespec_get (struct timespec *__ts, int __base)
+      |            ^~~~~~~~~~~~
+test.c:8:1: error: parameter ‘test_id’ is initialized
+    8 | int test_id = -1;
+      | ^~~
+test.c:11:77: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+   11 | int test_suite(int (*test)(), char *msg, int max_score, int id, int req_id) {
+      |                                                                             ^
+test.c:29:39: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+   29 | void print_array(int arr[], int size) {
+      |                                       ^
+test.c:37:24: error: expected declaration specifiers or ‘...’ before ‘Nodo’
+   37 | void print_linked_list(Nodo* lista) {
+      |                        ^~~~
+test.c:47:41: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+   47 | void readIntArray(int arr[], int *size) {
+      |                                         ^
+test.c:60:62: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+   60 | void create_random_array(int arr[], int *size, int max_size) {
+      |                                                              ^
+test.c:69:85: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+   69 | void create_random_sorted_array(int arr[], int *size, int max_size, int descending) {
+      |                                                                                     ^
+test.c:77:71: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+   77 | void create_random_unsorted_array(int arr[], int *size, int max_size) {
+      |                                                                       ^
+test.c:86:20: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+   86 | int test_findMax() {
+      |                    ^
+test.c:117:25: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+  117 | int test_reverseArray() {
+      |                         ^
+test.c:144:30: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+  144 | int test_filterEvenNumbers() {
+      |                              ^
+test.c:196:22: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+  196 | int test_mergeSort() {
+      |                      ^
+test.c:250:24: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+  250 | int test_checkSorted() {
+      |                        ^
+test.c:289:26: error: type defaults to ‘int’ in declaration of ‘Libro’ [-Werror=implicit-int]
+  289 | void imprimirLibro(const Libro *libro) {
+      |                          ^~~~~
+test.c:289:32: error: expected ‘;’, ‘,’ or ‘)’ before ‘*’ token
+  289 | void imprimirLibro(const Libro *libro) {
+      |                                ^
+test.c:295:23: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+  295 | int test_biblioteca() {
+      |                       ^
+test.c:326:31: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+  326 | int test_crearListaEnlazada() {
+      |                               ^
+test.c:382:34: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+  382 | int main(int argc, char *argv[]) {
+      |                                  ^
+In file included from test.c:1:
+exercises.c:31:6: error: old-style parameter declarations in prototyped function definition
+   31 | void reverseArray(int arr[], int size)
+      |      ^~~~~~~~~~~~
+test.c:411: error: expected ‘{’ at end of input
+cc1: all warnings being treated as errors
+Compilation failed
+8ab0a15
