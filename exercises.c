@@ -21,7 +21,7 @@ int findMax(int arr[], int size)
   }
   return max;  
 }	 
-  int main()
+int main()
 {
   int arr[] = {5,6,8,10,17,2};
   int size = sizeof(arr)/sizeof(arr[0]);
@@ -35,7 +35,41 @@ Ejercicio 2: Invertir un Arreglo
 Descripción: Escribe una función que tome un arreglo y su tamaño, y luego
 invierta el orden de sus elementos.
 */
-void reverseArray(int arr[], int size) {}
+void reverseArray(int arr[], int size) 
+{
+    int start = 0;
+    int end = size - 1;
+
+    while (start < end) {
+
+        int temp = arr[start];
+        arr[start] = arr[end];
+        arr[end] = temp;
+
+
+        start++;
+        end--;
+    }
+}
+
+int main() {
+    int arr[] = {1, 2, 3, 4, 5};
+    int size = sizeof(arr) / sizeof(arr[0]);
+
+    printf("Original array: ");
+    for (int i = 0; i < size; i++) {
+        printf("%d ", arr[i]);
+    }
+
+    reverseArray(arr, size);
+
+    printf("\nReversed array: ");
+    for (int i = 0; i < size; i++) {
+        printf("%d ", arr[i]);
+    }
+
+    return 0;
+}
 
 /*
 Ejercicio 3: Filtrar Números Pares
