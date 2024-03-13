@@ -71,3 +71,13 @@ exercises.c:25:5: note: previous definition of ‘main’ with type ‘int()’
       |     ^~~~
 Compilation failed
 201c1f4
+Wed 13 Mar 2024 08:57:18 PM UTC: 
+test.c:382:5: error: redefinition of ‘main’
+  382 | int main(int argc, char *argv[]) {
+      |     ^~~~
+In file included from test.c:1:
+exercises.c:25:5: note: previous definition of ‘main’ with type ‘int()’
+   25 | int main()
+      |     ^~~~
+Compilation failed
+7dfbf4c
