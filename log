@@ -1,1 +1,32 @@
 
+Wed 13 Mar 2024 08:34:19 PM UTC: 
+ exercises.c | 17 +++++++++++++++++
+ 1 file changed, 17 insertions(+)
+In file included from test.c:1:
+exercises.c:13:13: error: ‘arr’ undeclared here (not in a function)
+   13 |   int max = arr[0];
+      |             ^~~
+exercises.c:14:5: error: expected identifier or ‘(’ before ‘for’
+   14 |     for (int i = 1; i < size; i++) {
+      |     ^~~
+exercises.c:14:23: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘<’ token
+   14 |     for (int i = 1; i < size; i++) {
+      |                       ^
+exercises.c:14:32: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘++’ token
+   14 |     for (int i = 1; i < size; i++) {
+      |                                ^~
+exercises.c:19:5: error: expected identifier or ‘(’ before ‘return’
+   19 |     return max;
+      |     ^~~~~~
+exercises.c:20:1: error: expected identifier or ‘(’ before ‘}’ token
+   20 | }
+      | ^
+test.c:382:5: error: redefinition of ‘main’
+  382 | int main(int argc, char *argv[]) {
+      |     ^~~~
+In file included from test.c:1:
+exercises.c:22:5: note: previous definition of ‘main’ with type ‘int()’
+   22 | int main() {
+      |     ^~~~
+Compilation failed
+499f627
