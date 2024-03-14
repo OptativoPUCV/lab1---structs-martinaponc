@@ -181,4 +181,26 @@ typedef struct nodo {
   struct nodo *siguiente; // puntero al siguiente nodo
 } Nodo;
 
-Nodo *crearListaEnlazada(int arr[], int size) { return NULL; }
+Nodo *crearListaEnlazada(int arr[], int size) {
+    Nodo *primero = NULL; // puntero al primer nodo de la lista
+    Nodo *actual = NULL; // puntero al nodo actual
+
+    // Recorrer el arreglo y crear los nodos de la lista enlazada
+    for (int i = 0; i < size; i++) {
+        Nodo *nuevoNodo = (Nodo *)malloc(sizeof(Nodo)); // reservar memoria para el nuevo nodo
+
+        nuevoNodo->numero = arr[i]; // asignar el número del arreglo al nodo
+
+        if (actual == NULL) {
+            primero = nuevoNodo; // el primer nodo de la lista
+            actual = nuevoNodo;
+        } else {
+            actual->siguiente = nuevoNodo; // enlazar el nodo actual con el nuevo nodo
+            actual = nuevoNodo;
+        }
+
+        nuevoNodo->siguiente = NULL; // el último nodo apunta a NULL
+    }
+
+    return primero; 
+}
