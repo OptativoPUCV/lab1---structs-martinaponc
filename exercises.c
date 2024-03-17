@@ -129,11 +129,11 @@ int checkSorted(int arr[], int size) {
     }
 
     if (ascending == 1) {
-        return 1; // Orden ascendente
+        return 1; 
     } else if (descending == 1) {
-        return -1; // Orden descendente
+        return -1; 
     } else {
-        return 0; // No está ordenado
+        return 0;
     }
 }
 
